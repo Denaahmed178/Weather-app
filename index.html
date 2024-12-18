@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./style_index.css">
+</head>
+<body>
+    <div class="site-content" id="home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container d-flex   justify-content-around">
+                <img src="./Weather_imgs/logo@2x.png" class="img-fluid" id="logo">
+                <div class="container-fluid">
+                    <div class="contianer d-flex flex-column">
+                    <a class="navbar-brand text-white" href="#">Weather</a>
+                      <p>tagline goes here</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <i class="fa fa-bars"></i> 
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="nav-menu">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Livecameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="hero" data-bg-image="images/banner.png" style="background-image: url(./Weather_imgs/banner.png);">
+            <div class="container">
+                <form class="find-location">
+                    <input type="text" placeholder="Find your location..." id="search" >
+                    <input type="button" value="Find" id="submit" oninput="">
+                </form>
+
+            </div>
+
+            <div id="forecast-container" class=" container d-flex justify-content-around">
+                <div class="forecast " id="first-forecast" style="width: 33.33%;">
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form class="subscribe-form">
+                            <input class="rounded-pill" type="text" placeholder="Enter your email to subscribe...">
+                            <input type="button" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook blue-btn"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer>
+      
+    <script src="./JS/js_index.js"></script>
+
+
+</body>
+</html>
